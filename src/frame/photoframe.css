@@ -1,0 +1,33 @@
+.frame {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: inline-block;
+  background-color: black;
+  padding: 1%;
+}
+
+.framevideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  clip-path: inset(0 0 60px 0); /* Hide bottom branding area (adjust 60px as needed) */
+  z-index: 1;
+}
+
+.frameimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+}
+
